@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    font-family: roboto;
+    font-weight: 100; 
+}
+button:visited, a:visited, a:active, a:-webkit-any-link, a:hover, a:visited, a:active {
+    text-decoration: none!important;
+}
+body{
+    padding: 0px !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+    display: none;
+}
+/*
+@font-face {
+    font-family: 'roboto';
+    src: url('roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'timeless';
+    src: url('../UDEMY/timeless/Timeless.ttf');
+}
+*/
+ul {
+    list-style-type: none;
+    float: right;
+    padding-top: 5px;
+    color: white;
+    margin: 0.25em;
+    margin-right: 2em;
+    font-weight: 600;
+    position: relative;
+}
+li {
+    display: inline-block;
+    width: 7em;
+    margin: 10px 1.5em;
+    letter-spacing: 2px;
+    padding: 0.3em;
+    line-height: 2em;
+    border-radius: 2em;
+}
+li a {
+    display: block;
+    text-align: center;
+}
+#menu {
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    transition: all 1s; 
+    width: 100vw;
+    z-index: 10;
+}
+#menu ul {
+    float: right;
+}
+#menu li:hover {
+    background: none;
+    color: #fa6aaf;
+    border: 1px solid #fa6aaf;
+    padding: calc(0.3em - 1px);
+    cursor: pointer;
+}
+#drop {
+	top: 60vh;
+	width: 100%;
+	height: 5px;
+}
+.mynavbar {
+    background-image: linear-gradient(to top, #000, #fff0),url(imagens/Dream.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.mynavbar h1 {
+    font-size: 4em;
+    margin-left: 20px;
+    background: white;/*-webkit-linear-gradient(#080808,#ffbd1b);*/
+    text-shadow: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;  
+    letter-spacing: 5px;
+    text-align: center;
+    position: relative;
+    display: block;
+    top: 40vh;
+    -webkit-filter: drop-shadow(0 0 8px rgba(1,10,19,.4));
+    filter: drop-shadow(0 0 4px rgba(1,9,9,.4));
+    clear: both;
+}
+.mynavbar span {
+    font-size: 2em;
+    margin-left: 0px;
+    padding: 0px;
+    text-transform: uppercase;  
+    letter-spacing: 2px;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 45vh;
+    -webkit-filter: drop-shadow(0 0 8px rgba(1,10,19,.4));
+    filter: drop-shadow(0 0 8px rgba(1,9,9,.4));
+    background: white;
+    text-shadow: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ancora1 {
+    width: 100%;
+    height: 10px;
+    position: relative;
+    top: 80vh;
+}
+button {
+    font-size: 7em;
+    border: none;
+    background: none;
+    animation-name: roll;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    position: relative;
+    float: right;
+    right: 48.5vw;
+}
+buttton a {
+    display: inline-block;
+    width: 0.5em;
+}
+button:hover {
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
+button:visited, a:visited, a:active{
+    color: white;
+}
+@-webkit-keyframes roll {
+    0%   {top:60vh;}
+    50%  {top:65vh;}
+    100% {top:60vh;}
+}  
+#i_social {
+    padding: 1em;
+    top: 70vh;
+    width: 2.5vw;
+    display: inline-block;
+    position: fixed;
+    background: rgba(0,0,0,.8);
+}
+#i_social .fab {
+    font-size: 2em;
+    padding: 0.2em;
+    text-align: center;
+    display: block;
+}
+#i_social .fab:hover {
+    color: #fa6aaf/*#a59542*/;
+    cursor: pointer;
+}
+#second_sec {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+
+
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    /*-webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;*/
+    transition-delay: all 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+/*Fade loading*/
+
+ 
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; margin-top: 4em;  }
+    100% { opacity: 1; margin-top: 0em; }
+    }
+ 
+  .fadeIn {
+        -webkit-animation: fadeIn 3s ease-in-out;
+        -moz-animation: fadeIn 3s ease-in-out;
+        -o-animation: fadeIn 3s ease-in-out;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @-webkit-keyframes fadeIn2 {
+        0% { opacity: 0; }
+        100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn2 {
+        0% { opacity: 0;}
+        100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn2 {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    @keyframes fadeIn2 {
+        0% { opacity: 0; top: -.2em; }
+        68% { opacity: 0;}
+        100% { opacity: 1; top: 0em; }
+    }      
+    .fadeIn2 {
+        -webkit-animation: fadeIn 5s ease-in-out;
+        -moz-animation: fadeIn 5s ease-in-out;
+        -o-animation: fadeIn 5s ease-in-out;
+        animation: fadeIn2 2.2s ease-in-out; 
+    }
+    @keyframes fadeIn3 {
+        0% { opacity: 0; left: -5em; }
+        40% { opacity: 0; }
+        100% { opacity: 1; left: 0em; }
+    } 
+    .fadeIn3 {
+        -webkit-animation: fadeIn3 5s ease-in-out;
+        -moz-animation: fadeIn3 5s ease-in-out;
+        -o-animation: fadeIn3 5s ease-in-out;
+        animation: fadeIn3 2.2s ease-in-out; 
+        }
+
+/***** COMENTÁRIOS *****/
+  /*
+#home {
+    background: black url("imagens/architecture.jpg") no-repeat center 0;
+    width: 100%;
+    height: 680px; 
+    display: block;
+    background-attachment: fixed; 
+}
+
+#home h1 {
+    padding: 5px 17px;
+    color: white;
+    background: -webkit-linear-gradient(#f99d20,#fed449);
+    -webkit-filter: drop-shadow(0 0 8px rgba(1,10,19,.8));
+    filter: drop-shadow(0 0 8px rgba(1,10,19,.8));
+    text-shadow: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+#home span {
+    border-top: 2px solid;
+    border-bottom: 2px solid; 
+    background: -webkit-linear-gradient(#f99d20,#fed449);
+    color: #f99d20;
+    -webkit-filter: drop-shadow(0 0 8px rgba(1,10,19,.8));
+    filter: drop-shadow(0 0 8px rgba(1,10,19,.8));
+    text-shadow: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.center {
+    margin: 0 auto;
+    top: 40%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    width: 18%;
+}
+*/
